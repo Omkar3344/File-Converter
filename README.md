@@ -1,5 +1,7 @@
 # 1. Create and Activate Virtual Environment:
->>  python -m venv venv
+>>  python -m venv myenv
+>> ##for specific version
+>>  python<version> -m venv myenv
 >>  venv\Scripts\activate
 
 # 2. Install Required Packages:
