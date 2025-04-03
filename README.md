@@ -3,7 +3,7 @@
 >> ## for specific version
 >>  python(version) -m venv myenv
 >> ## activate virtual environment
->>  myenv\Scripts\activate
+>>  myenv/Scripts/activate
 
 # 2. Install Required Packages:
 >>  pip install -r requirements.txt
