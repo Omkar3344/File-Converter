@@ -2,7 +2,21 @@ import streamlit as st
 import pandas as pd
 from io import BytesIO
 
+# Set page config FIRST (before any other st commands)
 st.set_page_config(page_title="File Converter", page_icon="📂", layout="wide")
+
+# Hide Streamlit menu and footer (AFTER set_page_config)
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            .stDeployButton {display:none;}
+            div.block-container {padding-top:1rem;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 st.title("File Converter and Cleaner")
 st.write("Upload a file to clean it and convert it to another format")
 
