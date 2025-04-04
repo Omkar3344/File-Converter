@@ -111,7 +111,7 @@ if files:
                                ["CSV", "Excel", "JSON"], 
                                key=file.name)
 
-        if st.button(f"Download {file.name} as {format_choice}"):
+        if st.button(f"Convert {file.name} as {format_choice}"):
             output = BytesIO()
             
             if format_choice == "CSV":
